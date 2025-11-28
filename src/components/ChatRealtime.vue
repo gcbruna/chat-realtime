@@ -34,12 +34,14 @@
                 </div>
               </div>
 
-             <!-- INPUT -->
+              <!-- INPUT -->
               <div class="area-input glass p-2 mb-2 m-1 w-90">
                 <div class="input-group">
-                  <input v-model="texto" @keyup.enter="enviar" placeholder="Digite uma mensagem..." class="form-control input-msg">
-                  
-                  <button class="btn btn-primary rounded-circle d-flex m-1 align-items-center justify-content-center" @click="enviar">
+                  <input v-model="texto" @keyup.enter="enviar" placeholder="Digite uma mensagem..."
+                    class="form-control input-msg">
+
+                  <button class="btn btn-primary rounded-circle d-flex m-1 align-items-center justify-content-center"
+                    @click="enviar">
                     <i class="bi bi-cursor-fill fs-5"></i>
                   </button>
                 </div>
@@ -85,14 +87,16 @@ export default {
     };
   },
 
-  mounted() {
-    this.ably = new Ably.Realtime(
-      "WA9TGA.nuLYhw:kYidV4M_-rg5drc1oRmo3lOdKwbxD9Noux8CzwGbkys"
-    );
+  async mounted() {
+    await fetch("http://127.0.0.1:8000/api/ably-token");
+
+    this.ably = new Ably.Realtime({
+      authUrl: "http://127.0.0.1:8000/api/ably-token"
+    });
 
     this.canal = this.ably.channels.get("chat-geral");
 
-    this.canal.subscribe("nova-mensagem", (msg) => {
+    this.canal.subscribe("nova-mensagem", msg => {
       this.mensagens.push(msg.data);
 
       this.$nextTick(() => {
