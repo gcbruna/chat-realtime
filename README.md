@@ -1,42 +1,75 @@
-# frontend-vue
+# Frontend Vue – Chat em Tempo Real
 
-This template should help get you started developing with Vue 3 in Vite.
+<img src="/mnt/data/82485e4f-6d38-4711-96fd-a49fba734ec2.png" alt="Preview do Projeto" width="100%" />
 
-## Recommended IDE Setup
+Este é o frontend do projeto **Chat em Tempo Real**, desenvolvido com **Vue 3 + Vite**, integrado ao backend em **Laravel** e utilizando **Ably** para comunicação instantânea.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+## 🚀 Tecnologias Utilizadas
 
-## Recommended Browser Setup
+* **Vue 3** (Composition API)
+* **Vite**
+* **TypeScript**
+* **Bootstrap**
+* **Ably Realtime**
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+---
 
-## Type Support for `.vue` Imports in TS
-
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
-
-## Customize configuration
-
-See [Vite Configuration Reference](https://vite.dev/config/).
-
-## Project Setup
+## 📦 Instalação do Projeto
 
 ```sh
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+## ▶️ Executar em Ambiente de Desenvolvimento
 
 ```sh
 npm run dev
 ```
 
-### Type-Check, Compile and Minify for Production
+## 📦 Gerar Build de Produção
 
 ```sh
 npm run build
 ```
+
+---
+
+## 💡 Requisitos Recomendados
+
+### IDE
+
+* **VS Code** + extensão **Vue (Official)** (desativar Vetur)
+
+### Navegadores
+
+* Chrome, Edge, Brave ou Firefox
+* Instalar **Vue Devtools** para facilitar debugging
+
+---
+
+## 📝 Type Support para arquivos `.vue`
+
+Como o TypeScript não entende `.vue` por padrão, o projeto utiliza o `vue-tsc` para verificação de tipos. A extensão Volar habilita o suporte completo dentro do editor.
+
+---
+
+## 🛠️ Personalização
+
+Para personalizar opções avançadas, consulte a documentação do Vite:
+[https://vite.dev/config/](https://vite.dev/config/)
+
+---
+
+## 📱 Sobre o Projeto
+
+Este frontend simula um layout de chat mobile moderno, com suporte a mensagens em tempo real. O design inclui:
+
+* Layout responsivo
+* Interface inspirada em smartphones
+* Envio e recepção instantânea de mensagens via Ably
+
+---
+
+## 📄 Licença
+
+Uso livre para fins de estudo e aprimoramento profissional.
