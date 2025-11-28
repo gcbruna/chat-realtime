@@ -1,6 +1,6 @@
 # Frontend Vue – Chat em Tempo Real
 
-<img src="/mnt/data/82485e4f-6d38-4711-96fd-a49fba734ec2.png" alt="Preview do Projeto" width="100%" />
+![Preview do Projeto](public/img/preview.png)
 
 Este é o frontend do projeto **Chat em Tempo Real**, desenvolvido com **Vue 3 + Vite**, integrado ao backend em **Laravel** e utilizando **Ably** para comunicação instantânea.
 
